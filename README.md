@@ -10,6 +10,8 @@ https://github.com/akshu20791/addressbook-cicd-project
 
 wget raw.githubusercontent.com/NikitasGithub/Deployment-script/main/k8s-master.sh
 
+kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+
 #kubernetes node install 
 
 wget raw.githubusercontent.com/NikitasGithub/Deployment-script/main/k8s-nodes.sh
