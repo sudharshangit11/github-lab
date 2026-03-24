@@ -10,6 +10,8 @@ https://github.com/akshu20791/addressbook-cicd-project
 
 wget raw.githubusercontent.com/NikitasGithub/Deployment-script/main/k8s-master.sh
 
+kubeadm token create --print-join-command
+
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 
 #kubernetes node install 
@@ -31,6 +33,8 @@ net.ipv4.ip_forward = 1
 EOF
 
 sudo sysctl --system
+
+--cri-socket unix:///var/run/cri-dockerd.sock
 
 
 #jenkins install
